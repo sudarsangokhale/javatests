@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="View Multi-page Editor"
+            extensions="mpe"
+            icon="icons/sample.gif"
+            contributorClass="com.sudarsan.tests.gittest.editors.ViewMultiPageEditorContributor"
+            class="com.sudarsan.tests.gittest.editors.ViewMultiPageEditor"
+            id="com.sudarsan.tests.gittest.editors.ViewMultiPageEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="View Wizards"
+            id="com.sudarsan.tests.gittest">
+      </category>
+      <wizard
+            name="Multi-page Editor file"
+            icon="icons/sample.gif"
+            category="com.sudarsan.tests.gittest"
+            class="com.sudarsan.tests.gittest.wizards.ViewNewWizard"
+            id="com.sudarsan.tests.gittest.wizards.ViewNewWizard">
+      </wizard>
+   </extension>
+
+</plugin>
