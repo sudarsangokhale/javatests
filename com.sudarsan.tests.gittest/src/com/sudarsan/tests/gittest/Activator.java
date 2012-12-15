@@ -26,6 +26,7 @@ public class Activator extends AbstractUIPlugin {
 	 * @see org.eclipse.ui.plugin.AbstractUIPlugin#start(org.osgi.framework.BundleContext)
 	 */
 	public void start(BundleContext context) throws Exception {
+		// 2nd dummy commit from laptop
 		super.start(context);
 		plugin = this;
 	}
