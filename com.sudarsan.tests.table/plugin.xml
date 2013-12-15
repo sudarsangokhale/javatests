@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.sudarsan.tests.table"
+            name="Java Tests Category">
+      </category>
+      <view
+            category="com.sudarsan.tests.table"
+            class="com.sudarsan.tests.table.views.TableView"
+            icon="icons/sample.gif"
+            id="com.sudarsan.tests.table.views.TableView"
+            name="Sample Table View">
+      </view>
+   </extension>
+
+</plugin>
