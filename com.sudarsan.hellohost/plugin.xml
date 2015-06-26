@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="com.sudarsan.hellohost.delete"
+            name="Delete">
+         <commandParameter
+               id="com.sudarsan.hellohost.delete.parameter.resource"
+               name="resource"
+               optional="false"
+               values="org.eclipse.core.resources.IResource">
+         </commandParameter>
+      </command>
+   </extension>
+<extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:file?after=print">
+         <command
+               commandId="com.sudarsan.hellohost.delete"
+               label="Delete"
+               style="push"
+               tooltip="Delete Test">
+         </command>
+      </menuContribution>
+   </extension>
+</plugin>
